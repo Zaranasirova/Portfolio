@@ -31,14 +31,14 @@ const Home = () => {
                        <div className='image'> <img src={cv_image} alt="cv-image" style={{ filter: "url(#kennedy-comp-isuax1ud)" }}/></div>
                     </div>
                     <div className="contact-info">
-                        <div className="profile-box d-flex">
+                        <div className="profile-box">
                             <h4 className='name'>Zarifa Nasirova</h4>
                             <h6 className='role'>Front-End Developer</h6>
                         </div>
-                        <ul>
+                        <ul className='contact-box'>
                             {
                                 Contact_data.map(item => (
-                                    <li className='d-flex'><span>{item.type}</span> <span>{item.value}</span></li>
+                                    <li className='contact-list-item'><h6 className='type'>{item.type}</h6> <span className='value'>{item.value}</span></li>
                                 ))
                             }
                         </ul>

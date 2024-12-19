@@ -35,6 +35,9 @@
         background-color: #d8d5d5;
         height: 470px;
         position: relative;
+        animation: slideFromLeft 3s ease-out forwards;
+        animation-delay: 1s;
+        opacity: 0;
         .image {
           width: 450px;
           height: 450px;
@@ -54,19 +57,68 @@
         height: 470px;
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        .profile-box{
+        gap: 30px;
+        justify-content: center;
+        padding-left: 80px;
+        animation: slideFromRight 3s ease-out forwards;
+        animation-delay: 1s;
+        opacity: 0;
+        .profile-box {
           flex-direction: column;
           color: $first_color;
-          .name{
-font-size: 30px;
+          display: flex;
+          
+          .name {
+            font-size: 30px;
           }
-          .role{
+          .role {
             font-size: 14px;
             text-transform: uppercase;
           }
         }
+        .contact-box {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          
+          .contact-list-item {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            color: $first_color;
+            .type{
+              font-size: 14px;
+              text-transform: uppercase;
+              font-weight: bold;
+            }
+          }
+        }
       }
     }
+  }
+}
+
+
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-35%);
+    opacity: 0; 
+  }
+  100% {
+    transform: translateX(0);
+    opacity:1; 
+  }
+}
+
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(35%);
+    opacity: 0; 
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }

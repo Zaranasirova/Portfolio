@@ -11,4 +11,8 @@ export const Contact_data = [
     type: "address:",
     value: "Bakı ş, Binəqədi rayonu",
   },
+  {
+    type:" Date of birth:",
+    value:"18.06.2003"
+  }
 ];
