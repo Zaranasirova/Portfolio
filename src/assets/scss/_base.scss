@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Open Sans", serif;
+}
+.container {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: #000;
+}
+
+
+.container-section{
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
+
+$first_color:#182153;
