@@ -35,7 +35,7 @@
         background-color: #d8d5d5;
         height: 470px;
         position: relative;
-        animation: slideFromLeft 3s ease-out forwards;
+        animation: slideFromLeft 2s ease-out forwards;
         animation-delay: 1s;
         opacity: 0;
         .image {
@@ -60,14 +60,14 @@
         gap: 30px;
         justify-content: center;
         padding-left: 80px;
-        animation: slideFromRight 3s ease-out forwards;
+        animation: slideFromRight 2s ease-out forwards;
         animation-delay: 1s;
         opacity: 0;
         .profile-box {
           flex-direction: column;
           color: $first_color;
           display: flex;
-          
+
           .name {
             font-size: 30px;
           }
@@ -80,13 +80,13 @@
           display: flex;
           flex-direction: column;
           gap: 30px;
-          
+
           .contact-list-item {
             display: flex;
             flex-direction: column;
             gap: 7px;
             color: $first_color;
-            .type{
+            .type {
               font-size: 14px;
               text-transform: uppercase;
               font-weight: bold;
@@ -96,26 +96,69 @@
       }
     }
   }
+  .about-me-wrapper {
+    flex-direction: column;
+    background-color: #f1f1f1;
+
+    .social {
+      border: 1px solid $first_color;
+      width: 940px;
+      height: 74px;
+      background-color: $first_color;
+
+      .social-list {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        .social-list-item {
+          a {
+            .social-icon {
+              fill: #fff;
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+    }
+    .about-me {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      padding: 120px 0;
+      .text {
+        width: 500px;
+        line-height: 1.6em;
+        text-align: center;
+        font-size: 18px;
+        color: $first_color;
+      }
+      .about-me-head-title {
+        font-size: 30px;
+        color: $first_color;
+      }
+    }
+  }
 }
-
-
 
 @keyframes slideFromLeft {
   0% {
     transform: translateX(-35%);
-    opacity: 0; 
+    opacity: 0;
   }
   100% {
     transform: translateX(0);
-    opacity:1; 
+    opacity: 1;
   }
 }
-
 
 @keyframes slideFromRight {
   0% {
     transform: translateX(35%);
-    opacity: 0; 
+    opacity: 0;
   }
   100% {
     transform: translateX(0);
