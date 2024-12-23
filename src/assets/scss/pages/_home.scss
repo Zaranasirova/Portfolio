@@ -105,7 +105,7 @@
       width: 940px;
       height: 74px;
       background-color: $first_color;
-      animation: slideFromTop 2s ease-out forwards;
+      animation: slideFromTop 1s ease-out forwards;
       opacity: 0;
       animation-delay: 1s;
       .social-list {
@@ -130,7 +130,8 @@
       flex-direction: column;
       gap: 20px;
       align-items: center;
-      padding: 120px 0;
+      height: 400px;
+      justify-content: center;
       .text {
         width: 500px;
         line-height: 1.6em;

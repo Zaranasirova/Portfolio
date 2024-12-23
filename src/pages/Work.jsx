@@ -7,7 +7,7 @@ const Work = () => {
     <section className='work-experience-section'>
       <div className='work-experience-wrapper'>
         <h3 className='work-experience-head-title'>WORK EXPERIENCE</h3>
-        <div className="work-experience">
+        <div className="work-experience d-flex">
           {
             Work_data.map(item => (
               <div className="work-box">

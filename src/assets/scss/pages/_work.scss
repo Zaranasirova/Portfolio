@@ -1,3 +1,62 @@
-.work-experience-section{
-    padding: 40px 0;
+.work-experience-section {
+  .work-experience-wrapper {
+    width: 100%;
+    .work-experience-head-title {
+      color: $first_color;
+      font-size: 20px;
+      width: 100%;
+      text-align: center;
+      padding: 50px 0;
+      border-bottom: 1px solid #cacaca;
+    }
+    .work-experience {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      padding: 50px 0;
+      .work-box {
+        display: flex;
+        gap: 120px;
+        justify-content: center;
+        width: 100%;
+        &::before{
+            
+        }
+        .left-side {
+          width: 50%;
+          .duration {
+            line-height: 1.8em;
+            text-align: right;
+            font-size: 14px;
+            color: $first_color;
+            letter-spacing: 0.15em;
+            font-weight: bolder;
+          }
+          .position {
+            line-height: 1.8em;
+            text-align: right;
+            font-size: 14px;
+            letter-spacing: 0.2em;
+            color: $first_color;
+          }
+        }
+        .right-side {
+          width: 50%;
+          .company {
+            line-height: 1.8em;
+            font-size: 14px;
+            letter-spacing: 0.2em;
+            color: $first_color;
+          }
+          .description {
+            line-height: 1.8em;
+            font-size: 14px;
+            color: $first_color;
+            width: 400px;
+          }
+        }
+      }
+    }
+  }
 }
