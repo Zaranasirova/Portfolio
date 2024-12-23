@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './components/Header'
 import Home from './pages/Home'
 import Work from './pages/Work'
+import Education from './pages/Education'
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
       <main>
         <Home />
         <Work/>
+        <Education/>
       </main>
 
     </>
