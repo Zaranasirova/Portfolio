@@ -20,9 +20,7 @@
         gap: 120px;
         justify-content: center;
         width: 100%;
-        &::before{
-            
-        }
+        position: relative;
         .left-side {
           width: 50%;
           .duration {
@@ -56,6 +54,30 @@
             width: 400px;
           }
         }
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 1px;
+          top: 15px;
+          height: 141px;
+          background: #cacaca;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: $first_color;
+          top: 10px;
+          width: 5px;
+          height: 5px;
+          border: 1px solid $first_color;
+          border-radius: 50%;
+        }
+      }
+
+      .work-box:last-of-type::before {
+        height: 110px;
       }
     }
   }
