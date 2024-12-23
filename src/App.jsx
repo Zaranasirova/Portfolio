@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from './components/Header'
 import Home from './pages/Home'
+import Work from './pages/Work'
+
 
 const App = () => {
   return (
@@ -8,6 +10,7 @@ const App = () => {
       <Header />
       <main>
         <Home />
+        <Work/>
       </main>
 
     </>
