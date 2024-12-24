@@ -3,6 +3,8 @@ import Header from './components/Header'
 import Home from './pages/Home'
 import Work from './pages/Work'
 import Education from './pages/Education'
+import Skills from './pages/Skills'
+
 
 
 const App = () => {
@@ -13,6 +15,7 @@ const App = () => {
         <Home />
         <Work/>
         <Education/>
+        <Skills/>
       </main>
 
     </>
