@@ -5,18 +5,20 @@ import { IoLogoCss3 } from "react-icons/io";
 import { BsFiletypeScss } from "react-icons/bs";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiTypescript } from "react-icons/si";
-import { SiRedux } from "react-icons/si"
+import { SiRedux } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
 
 
 const Skills = () => {
-   const skills = [<FaReact />, <FaHtml5 />, <IoLogoCss3 />, <BsFiletypeScss />, <IoLogoJavascript />, <SiTypescript />, <SiRedux />]
+   const skills = [ <FaHtml5 className='icon' />, <IoLogoCss3 className='icon' />, <BsFiletypeScss className='icon' />, <IoLogoJavascript className='icon' />, <SiTypescript className='icon' />,<FaReact className='icon'/>, <SiRedux className='icon' />,<FaGithub className='icon'/>]
   return (
-    <section>
-      <div className="container">
+    <section className='skills-container'>
+      <div className="container skill-wrapper">
+        <h2 className='skills-head-title'>Skills</h2>
         <div className="skills-box">
           {
             skills.map(item => (
-              <span className='icon'>{item}</span>
+              <span className='skill-icon'>{item}</span>
             ))
           }
         </div>

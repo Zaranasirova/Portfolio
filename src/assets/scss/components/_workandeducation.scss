@@ -63,6 +63,7 @@
           top: 15px;
           height: 141px;
           background: #cacaca;
+          
         }
 
         &::after {
@@ -74,6 +75,7 @@
           height: 5px;
           border: 1px solid $first_color;
           border-radius: 50%;
+          
         }
       }
 
@@ -83,3 +85,14 @@
     }
   }
 }
+
+
+@keyframes slideFromWorkTop {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
