@@ -30,6 +30,10 @@ a {
   height: auto;
   margin: 0 auto;
 }
+html, body {
+  overflow-x: hidden;
+}
+
 
 $first_color:#182153;
 $second_color:#F1F1F1;

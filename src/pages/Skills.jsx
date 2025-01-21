@@ -17,8 +17,8 @@ const Skills = () => {
         <h2 className='skills-head-title'>Skills</h2>
         <div className="skills-box">
           {
-            skills.map(item => (
-              <span className='skill-icon'>{item}</span>
+            skills.map((item,index) => (
+              <span className='skill-icon' key={index}>{item}</span>
             ))
           }
         </div>
