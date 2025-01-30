@@ -10,10 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "gsap": "^3.12.5",
+    "lightbox2": "^2.11.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
+    "react-images": "^1.2.0-beta.7",
+    "react-photo-gallery": "^8.0.0",
     "react-router-dom": "^7.0.2",
     "swiper": "^11.2.1"
   },
