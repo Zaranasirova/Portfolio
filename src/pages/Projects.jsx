@@ -5,10 +5,7 @@ import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
 import { FaGithub } from "react-icons/fa";
 import Fancybox from "../components/Fancybox";
-import Project_1 from "../assets/image/layihe1.png";
-import Project_2 from "../assets/image/layihe2.png";
-import Project_3 from "../assets/image/layihe3.png";
-import Project_4 from "../assets/image/layihe4.png";
+
 import { projectsData } from "../data";
 
 
@@ -47,38 +44,44 @@ const Projects = () => {
                     </div>
                     <div className="right-side-swiper">
                       <div className="project-image">
-                        <Fancybox
-                          options={{
+                        {
+                          item.image.map((item, index) => (
+                            <Fancybox
+                              key={index}
+                            options = {{
                             Carousel: {
                               infinite: true,
                             },
+
                           }}
-                        >
+                            >
+                        <a data-fancybox="gallery" href={item.image1}>
+                          <img src={item.image1} alt="Project 1" />
+                        </a>
+                        <a data-fancybox="gallery" href={item.image2} style={{ display: 'none' }}>
+                          <img src={item.image2} alt="Project 2" />
+                        </a>
+                        <a data-fancybox="gallery" href={item.image3} style={{ display: 'none' }}>
+                          <img src={item.image3} alt="Project 3" />
+                        </a>
+                        <a data-fancybox="gallery" href={item.image4} style={{ display: 'none' }}>
+                          <img src={item.image4} alt="Project 4" />
+                        </a>
 
-                          <a data-fancybox="gallery" href={Project_1}>
-                            <img src={Project_1} alt="Project 1" />
-                          </a>
-                          <a data-fancybox="gallery" href={Project_2} style={{ display: 'none' }}>
-                            <img src={Project_2} alt="Project 2" />
-                          </a>
-                          <a data-fancybox="gallery" href={Project_3} style={{ display: 'none' }}>
-                            <img src={Project_3} alt="Project 3" />
-                          </a>
-                          <a data-fancybox="gallery" href={Project_4} style={{ display: 'none' }}>
-                            <img src={Project_4} alt="Project 4" />
-                          </a>
+                      </Fancybox>
+                      ))
+                        }
 
-                        </Fancybox>
-                      </div>
                     </div>
                   </div>
+                </div>
                 </SwiperSlide>
-              ))
+          ))
             }
-          </Swiper>
-        </div>
+        </Swiper>
       </div>
-    </section>
+    </div>
+    </section >
   );
 };
 

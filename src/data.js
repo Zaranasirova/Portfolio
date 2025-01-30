@@ -1,3 +1,8 @@
+import Layihe1 from './assets/image/layihe1.png';
+import Layihe2 from './assets/image/layihe2.png';
+import Layihe3 from './assets/image/layihe3.png';
+import Layihe4 from './assets/image/layihe4.png';
+
 export const Contact_data = [
   {
     type: "phone:",
@@ -59,6 +64,7 @@ export const projectsData = [
     skills: "React.js,Scss,TypeScript,Redux,react-google-charts,CoinGecko API",
     github_link:"https://github.com/Zaranasirova/crypto_marketPlace",
     demo_link:"https://crypto-market-place-pi.vercel.app/",
+    image:[{image1:Layihe1, image2:Layihe2,image3:Layihe3,image4:Layihe4}]
     },
     {
       id: 2,
@@ -67,5 +73,7 @@ export const projectsData = [
       skills: "React.js,Scss,TypeScript,Redux,react-google-charts,CoinGecko API",
       github_link:"https://github.com/Zaranasirova/crypto_marketPlace",
       demo_link:"https://crypto-market-place-pi.vercel.app/",
+      image:[{image1:Layihe4, image2:Layihe2,image3:Layihe1,image4:Layihe3}]
       },
+    
 ];
