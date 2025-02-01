@@ -43,6 +43,42 @@
               flex: 1;
               background-color: #ffffff26;
               color: #fff;
+              height: 254px;
+              display: flex;
+              flex-direction: column;
+              .project-info {
+                flex: 3;
+                padding: 15px;
+                border-bottom: 1px solid grey;
+                gap: 10px;
+                color:#cecece;
+                .project-number {
+                  font-size: 40px;
+                  padding-bottom: 5px;
+                }
+                .project-name {
+                  font-size: 20px;
+                  padding-bottom: 10px;
+                }
+                .project-text{
+                  padding-bottom: 5px;
+                  
+                }
+              }
+              .project-links {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 0 15px;
+                a{
+                  .link{
+                    width: 25px;
+                    height: 25px;
+                    color: #cecece;
+                  }
+                }
+              }
             }
             .right-side-swiper {
               flex: 1;

@@ -10,11 +10,6 @@ import { projectsData } from "../data";
 
 
 const Projects = () => {
-
-
-
-
-
   return (
     <section className="projects-section">
       <div className="projects-section-title">
@@ -29,17 +24,14 @@ const Projects = () => {
                   <div className="swiper-box">
                     <div className="left-side-swiper">
                       <div className="project-info">
-                        <h2 className="project-number">{item.id}</h2>
+                        <h2 className="project-number">{item.number}</h2>
                         <h3 className="project-name">{item.title}</h3>
-
-
                         <p className="project-text">{item.text}</p>
                         <span>{item.skills}</span>
-
                       </div>
                       <div className="project-links">
-                        <Link to={item.demo_link} target="_blank"><GoArrowUpRight /></Link>
-                        <Link to={item.github_link} target="_blank"><FaGithub /></Link>
+                        <Link to={item.demo_link} target="_blank" ><GoArrowUpRight className="link" /></Link>
+                        <Link to={item.github_link} target="_blank" ><FaGithub className="link" /></Link>
                       </div>
                     </div>
                     <div className="right-side-swiper">
@@ -48,39 +40,40 @@ const Projects = () => {
                           item.image.map((item, index) => (
                             <Fancybox
                               key={index}
-                            options = {{
-                            Carousel: {
-                              infinite: true,
-                            },
+                              className="fancybox"
+                              options={{
+                                Carousel: {
+                                  infinite: true,
+                                },
 
-                          }}
+                              }}
                             >
-                        <a data-fancybox="gallery" href={item.image1}>
-                          <img src={item.image1} alt="Project 1" />
-                        </a>
-                        <a data-fancybox="gallery" href={item.image2} style={{ display: 'none' }}>
-                          <img src={item.image2} alt="Project 2" />
-                        </a>
-                        <a data-fancybox="gallery" href={item.image3} style={{ display: 'none' }}>
-                          <img src={item.image3} alt="Project 3" />
-                        </a>
-                        <a data-fancybox="gallery" href={item.image4} style={{ display: 'none' }}>
-                          <img src={item.image4} alt="Project 4" />
-                        </a>
+                              <a data-fancybox="gallery" href={item.image1} className="image-link">
+                                <img src={item.image1} alt="Project 1" />
+                              </a>
+                              <a data-fancybox="gallery" href={item.image2} style={{ display: 'none' }}>
+                                <img src={item.image2} alt="Project 2" />
+                              </a>
+                              <a data-fancybox="gallery" href={item.image3} style={{ display: 'none' }}>
+                                <img src={item.image3} alt="Project 3" />
+                              </a>
+                              <a data-fancybox="gallery" href={item.image4} style={{ display: 'none' }}>
+                                <img src={item.image4} alt="Project 4" />
+                              </a>
 
-                      </Fancybox>
-                      ))
+                            </Fancybox>
+                          ))
                         }
 
+                      </div>
                     </div>
                   </div>
-                </div>
                 </SwiperSlide>
-          ))
+              ))
             }
-        </Swiper>
+          </Swiper>
+        </div>
       </div>
-    </div>
     </section >
   );
 };

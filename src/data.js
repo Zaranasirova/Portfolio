@@ -58,16 +58,18 @@ export const education_data = [
 
 export const projectsData = [
   {
-    id: 1,
+    
+    number:"01",
     title: "Largest Crypto Marketplace",
-    text: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium sint, illo ab recusandae autem voluptatem.",
+    text: " Largest Crypto Marketplace, kriptovalyuta həvəskarları və analitikləri üçün nəzərdə tutulmuş innovativ bir platformadır. ",
     skills: "React.js,Scss,TypeScript,Redux,react-google-charts,CoinGecko API",
     github_link:"https://github.com/Zaranasirova/crypto_marketPlace",
     demo_link:"https://crypto-market-place-pi.vercel.app/",
     image:[{image1:Layihe1, image2:Layihe2,image3:Layihe3,image4:Layihe4}]
     },
     {
-      id: 2,
+      
+      number:"02",
       title: "Largest Crypto Marketplace",
       text: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium sint, illo ab recusandae autem voluptatem.",
       skills: "React.js,Scss,TypeScript,Redux,react-google-charts,CoinGecko API",

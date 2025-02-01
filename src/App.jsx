@@ -5,6 +5,7 @@ import Work from './pages/Work'
 import Education from './pages/Education'
 import Skills from './pages/Skills'
 import Projects from './pages/Projects'
+import Contact from './pages/Contact'
 
 
 
@@ -24,6 +25,7 @@ const App = () => {
         <Education/>
         <Skills/>
         <Projects/>
+        <Contact/>
       </main>
 
     </>
