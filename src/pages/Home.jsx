@@ -74,7 +74,7 @@ const Home = forwardRef((props, ref) => {
                     </ul>
                 </div>
                 <div className="about-me">
-                    <h4 className='about-me-head-title'>About me</h4>
+                    <h2 className='about-me-head-title'>About me</h2>
                     <p className='text'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quasi eum ratione consequatur accusantium sunt illo ab quae beatae! Architecto itaque officia error a voluptate.
                     </p>

@@ -9,14 +9,15 @@
       font-size: 20px;
       letter-spacing: 0.2em;
       color: $first_color;
+      text-transform: uppercase;
     }
     .skills-box {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
-     justify-content: start;
+      justify-content: start;
       .skill-icon {
-        flex: 0 1 calc(100% / 6 - 30px); 
+        flex: 0 1 calc(100% / 6 - 30px);
         text-align: center;
         width: 80px;
         height: 80px;
@@ -29,4 +30,3 @@
     }
   }
 }
-

@@ -98,7 +98,7 @@
   }
   .about-me-wrapper {
     flex-direction: column;
-    background-color: #f1f1f1;
+    background-color: $second_color;
     position: relative;
     .social {
       border: 1px solid $first_color;
@@ -143,8 +143,10 @@
         color: $first_color;
       }
       .about-me-head-title {
-        font-size: 30px;
+        font-size: 20px;
         color: $first_color;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
       }
     }
   }
@@ -181,23 +183,23 @@
     opacity: 0;
     height: 25px;
   }
-  60%{
+  60% {
     opacity: 1;
     height: 35px;
   }
-  70%{
+  70% {
     opacity: 1;
     height: 45px;
   }
-  80%{
+  80% {
     opacity: 1;
     height: 55px;
   }
-  90%{
+  90% {
     opacity: 1;
     height: 65px;
   }
-  100%{
+  100% {
     opacity: 1;
     height: 74px;
   }

@@ -33,7 +33,7 @@ const EducationAndWork = ({ title, data }) => {
   return (
     <section className="work-experience-section">
       <div className="work-experience-wrapper" ref={containerRef}>
-        <h3 className="work-experience-head-title">{title}</h3>
+        <h2 className="work-experience-head-title">{title}</h2>
         <div className="work-experience">
           {data.map((item, index) => (
             <div className="work-box" key={index}>
