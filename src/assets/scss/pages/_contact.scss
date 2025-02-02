@@ -91,7 +91,7 @@
       flex-direction: column;
       .consultant-contact-info{
         flex: 3;
-        padding: 0 0 0 80px;
+        padding: 0 0 50px 80px;
         display: flex;
         flex-direction: column;
         gap: 25px;
@@ -136,6 +136,17 @@
             a{
                 font-size: 14px;
                 color: $first_color;
+            }
+        }
+      }
+      .social-links{
+        display: flex;
+        gap: 25px;
+        padding: 40px 0 0 80px;
+        a{
+            .contact-link-icon{
+                width: 22px;
+                height: 22px;
             }
         }
       }
