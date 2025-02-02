@@ -32,7 +32,7 @@
       form {
         display: flex;
         flex-direction: column;
-        width: 400px;
+        margin-right: 80px;
         gap: 10px;
         .name-email {
           display: flex;
@@ -87,6 +87,58 @@
     }
     .contact-info {
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      .consultant-contact-info{
+        flex: 3;
+        padding: 0 0 0 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        color: $first_color;
+        border-bottom: 1px solid grey;
+        .frontend-consultant-info{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            
+            h2{
+                font-size: 25px;
+                font-weight: 600;
+                
+            }
+            p{
+                letter-spacing: 0.05em;
+                font-size: 14px;
+            }
+        }
+        .contact-phone{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            h6{
+                font-size: 14px;
+                letter-spacing: 0.05em;
+            }
+            a{
+                font-size: 14px;
+                color: $first_color;
+            }
+        }
+        .contact-email{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            h6{
+                font-size: 14px;
+                letter-spacing: 0.05em;
+            }
+            a{
+                font-size: 14px;
+                color: $first_color;
+            }
+        }
+      }
     }
   }
 }
