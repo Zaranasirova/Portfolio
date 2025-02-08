@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import cv_image from "../assets/image/cv_image.png";
+import cv_image from "../assets/image/cv_image1.png";
 import { Contact_data } from '../data';
 import { FaLinkedinIn, FaFacebookF, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { Link } from 'react-router-dom';
@@ -26,7 +26,7 @@ const Home = forwardRef((props, ref) => {
                     </defs>
                 </svg>
                 <div className="bg-image"></div>
-                <div className="contact-wrapper d-flex">
+                <div className="contact-wrapper">
                     <div className="contact-image">
                         <div className='image'>
                             <img src={cv_image} alt="cv-image" style={{ filter: "url(#kennedy-comp-isuax1ud)" }} />
