@@ -22,10 +22,10 @@ const EducationAndWork = ({ title, data }) => {
           }, index * 300);
         }
       });
-    }, 100); // Scroll 100ms interval ilə işləyəcək
+    }, 100); 
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // İlk yoxlama
+    handleScroll(); 
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);

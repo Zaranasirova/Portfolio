@@ -67,7 +67,7 @@
           flex-direction: column;
           color: $first_color;
           display: flex;
-
+gap: 10px;
           .name {
             font-size: 30px;
           }
@@ -135,6 +135,7 @@
       align-items: center;
       height: 400px;
       justify-content: center;
+      padding-top: 75px;
       .text {
         width: 500px;
         line-height: 1.6em;

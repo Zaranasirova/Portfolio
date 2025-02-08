@@ -76,7 +76,8 @@ const Home = forwardRef((props, ref) => {
                 <div className="about-me">
                     <h2 className='about-me-head-title'>About me</h2>
                     <p className='text'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quasi eum ratione consequatur accusantium sunt illo ab quae beatae! Architecto itaque officia error a voluptate.
+
+                        I’m Zərifə Nəsirova, a professional Frontend Developer in the field of web application development. I am focused on creating modern and functional web applications with a strong emphasis on user experience. In the projects I develop, I strive to ensure high quality and performance
                     </p>
                 </div>
             </div>

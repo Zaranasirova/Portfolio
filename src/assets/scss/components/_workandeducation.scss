@@ -81,7 +81,7 @@
           position: absolute;
           width: 1px;
           top: 15px;
-          height: 141px;
+          height: 110%;
           background: #cacaca;
         }
 
@@ -98,7 +98,7 @@
       }
 
       .work-box:last-of-type::before {
-        height: 110px;
+      height: calc(100% - 18px);
       }
     }
   }
