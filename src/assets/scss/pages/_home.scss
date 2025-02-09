@@ -5,10 +5,13 @@
     .bg-image {
       background-image: url("../image/digital.jpg");
       width: 100%;
-      height: 700px;
+      height: 600px;
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: cover;
+      @media(max-width: 820px){
+        height: 700px;
+      }
     }
     .contact-wrapper {
       position: absolute;
@@ -161,12 +164,10 @@
       flex-direction: column;
       gap: 20px;
       align-items: center;
-      height: 400px;
+      height: 100%;
+      margin: 50px 0;
       justify-content: center;
       padding-top: 75px;
-      @media (max-width: 370px) {
-        height: 370px;
-      }
       .text {
         width: 500px;
         line-height: 1.6em;
