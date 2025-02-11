@@ -1,23 +1,28 @@
 .skills-container {
-  padding: 50px 0;
-  .skill-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-    .skills-head-title {
-      text-align: center;
+  
+  .skills-head-title {
+    text-align: center;
+    border-bottom: 1px solid #d6b8b8;
+    padding: 30px 0;
+    h2 {
       font-size: 20px;
       letter-spacing: 0.2em;
       color: $first_color;
       text-transform: uppercase;
     }
+  }
+  .skill-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+   padding-top: 60px;
     .skills-box {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
-      justify-content: start;
+      justify-content: center;
       padding: 30px 0;
-    
+
       .skill-icon {
         flex: 0 1 calc(100% / 6 - 30px);
         text-align: center;
@@ -34,18 +39,18 @@
         opacity: 0;
         transition: transform 0.5s ease, opacity 0.5s ease;
         animation-delay: calc(0.1s * var(--delay));
-    
+
         &.animate {
           transform: scale(1);
           opacity: 1;
         }
-    
+
         &:hover {
           transform: translateY(-10px) scale(1.05);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
           transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-    
+
         .icon {
           width: 55px;
           height: 55px;
@@ -54,10 +59,8 @@
         }
       }
     }
-    
   }
 }
-
 
 @keyframes fadeInUp {
   from {

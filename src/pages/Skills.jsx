@@ -39,6 +39,9 @@ const SkillsSection = () => {
 
   return (
     <section className="skills-container">
+      <div className="skills-head-title">
+       <h2>skills</h2>
+       </div>
       <div className="container skill-wrapper">
         <div className="skills-box" ref={skillsRef}>
           {skills.map((item, index) => (

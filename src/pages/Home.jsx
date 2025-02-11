@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import cv_image from "../assets/image/cv_image1.png";
+import cv_image from "../assets/image/zara.png";
 import { Contact_data } from '../data';
 import { FaLinkedinIn, FaFacebookF, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { Link } from 'react-router-dom';

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
 import { FaGithub } from "react-icons/fa";
 import Fancybox from "../components/Fancybox";
-
+import { Autoplay } from "swiper/modules";
 import { projectsData } from "../data";
 
 
@@ -17,7 +17,16 @@ const Projects = () => {
       </div>
       <div className="projects-wrapper">
         <div className="projects-box-wrapper container">
-          <Swiper className="mySwiper">
+          <Swiper 
+          className="mySwiper"
+          modules={[Autoplay]}
+            autoplay={{
+              delay: 1800, 
+              disableOnInteraction: false, 
+              pauseOnMouseEnter: true,
+            }}
+            loop={true} 
+            >
             {
               projectsData.map((item, index) => (
                 <SwiperSlide className="swiper" key={index}>
@@ -26,8 +35,9 @@ const Projects = () => {
                       <div className="project-info">
                         <h2 className="project-number">{item.number}</h2>
                         <h3 className="project-name">{item.title}</h3>
-                        <p className="project-text">{item.text}</p>
-                        <span>{item.skills}</span>
+                        <div className="project-text"><p>{item.text}</p></div>
+                        <div className="projects-skills"><span>{item.skills}</span></div>
+
                       </div>
                       <div className="project-links">
                         <Link to={item.demo_link} target="_blank" ><GoArrowUpRight className="link" /></Link>

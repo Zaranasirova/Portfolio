@@ -36,7 +36,8 @@ const EducationAndWork = ({ title, data }) => {
         <h2 className="work-experience-head-title">{title}</h2>
         <div className="work-experience">
           {data.map((item, index) => (
-            <div className="work-box" key={index}>
+           <div className="container" key={index}>
+             <div className="work-box" key={index}>
               <div className="left-side">
                 <h6 className="duration">{item.duration}</h6>
                 <p className="position">{item.position}</p>
@@ -46,6 +47,7 @@ const EducationAndWork = ({ title, data }) => {
                 <p className="description">{item.description}</p>
               </div>
             </div>
+           </div>
           ))}
         </div>
       </div>

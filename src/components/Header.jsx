@@ -15,7 +15,7 @@ const Header = ({ handleScroll, refs }) => {
                 setMenuToggle(false);
             } else {
                 setMenuToggle(true);
-                setIsOpen(false); // Ekran geniş olduqda menyunu bağla
+                setIsOpen(false); 
             }
         };
         handleResize();
@@ -39,11 +39,12 @@ const Header = ({ handleScroll, refs }) => {
                         refs={refs}
                         navbar={"navigation"}
                         navlist={"navigation-list"}
+                        navitem={"navigation-item"}
                     />
                 ) : (
                     <div className="burger-menu-wrapper" onClick={openMenuBar}>
                         {isOpen ? (
-                            <div className='burger-menu'><IoMdClose className="menu-icon" /></div>
+                            <div className='burger-menu close-menu'><IoMdClose className="menu-icon" /></div>
                         ) : (
                            <div className="burger-menu"><RxHamburgerMenu className='menu-icon' /></div> 
                         )}
@@ -52,6 +53,8 @@ const Header = ({ handleScroll, refs }) => {
                                 handleScroll={handleScroll}
                                 refs={refs}
                                 navbar={"responsive-navigation active"}
+                                navlist={"responsive-nav-list"}
+                                navitem={"responsive-nav-item"}
                             />
                         )}
                     </div>
