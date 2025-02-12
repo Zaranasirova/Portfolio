@@ -52,22 +52,22 @@ const Home = forwardRef((props, ref) => {
                 <div className='social'>
                     <ul className='social-list'>
                         <li className='social-list-item'>
-                            <Link to="https://www.linkedin.com/in/zarifa-nasirova/" target="_blank">
+                            <Link to="https://www.linkedin.com/in/z%C9%99rif%C9%99-n%C9%99sirova-34a551309/" target="_blank">
                                 <FaLinkedinIn className='social-icon' />
                             </Link>
                         </li>
                         <li className='social-list-item'>
-                            <Link to="https://github.com/zarifanasirova" target="_blank">
+                            <Link to="https://github.com/Zaranasirova" target="_blank">
                                 <FaGithub className='social-icon' />
                             </Link>
                         </li>
                         <li className='social-list-item'>
-                            <Link to="https://www.facebook.com/zarifanasirova" target="_blank">
+                            <Link to="https://www.facebook.com/profile.php?id=61564042628039" target="_blank">
                                 <FaFacebookF className='social-icon' />
                             </Link>
                         </li>
                         <li className='social-list-item'>
-                            <Link to="https://wa.me/123456789" target="_blank">
+                            <Link to="https://wa.me/994517375883" target="_blank">
                                 <FaWhatsapp className='social-icon' />
                             </Link>
                         </li>

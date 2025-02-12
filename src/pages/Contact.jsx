@@ -7,6 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const Contact = () => {
   const form = useRef();
@@ -101,15 +102,15 @@ const Contact = () => {
             </div>
             <div className="contact-email">
               <h6>E-mail</h6>
-              <Link to={"mailto:Zerifenesirova784@gamil.com"} >Zerifenesirova784@gamil.com</Link>
+              <Link to={"mailto:Zerifenesirova784@gamil.com"} >Zerifenesirova784@gmail.com</Link>
             </div>
           </div>
           
           <div className="social-links">
-            <Link to={"/"}><FaLinkedinIn className='contact-link-icon' /></Link>
-            <Link to={"/"}><FaGithub className='contact-link-icon' /></Link>
-            <Link to={"/"}><FaFacebookF className='contact-link-icon' /></Link>
-            <Link to={"/"}><FaInstagram className='contact-link-icon' /></Link>
+            <Link to={"https://www.linkedin.com/in/z%C9%99rif%C9%99-n%C9%99sirova-34a551309/"} target='_blank'><FaLinkedinIn className='contact-link-icon' /></Link>
+            <Link to={"https://github.com/Zaranasirova"} target='_blank'><FaGithub className='contact-link-icon' /></Link>
+            <Link to={"https://www.facebook.com/profile.php?id=61564042628039"} target='_blank'><FaFacebookF className='contact-link-icon' /></Link>
+            <Link to={"https://wa.me/994517375883" } target='_blank'><IoLogoWhatsapp className='contact-link-icon' /></Link>
           </div>
         </div>
       </div>
