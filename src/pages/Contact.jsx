@@ -88,6 +88,7 @@ const Contact = () => {
           </form>
           <ToastContainer />
         </div>
+        <div className="divider"></div>
         <div className="contact-info">
           <div className="consultant-contact-info">
             <div className="frontend-consultant-info">
@@ -103,6 +104,7 @@ const Contact = () => {
               <Link to={"mailto:Zerifenesirova784@gamil.com"} >Zerifenesirova784@gamil.com</Link>
             </div>
           </div>
+          
           <div className="social-links">
             <Link to={"/"}><FaLinkedinIn className='contact-link-icon' /></Link>
             <Link to={"/"}><FaGithub className='contact-link-icon' /></Link>

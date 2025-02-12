@@ -22,7 +22,7 @@ const Projects = () => {
           modules={[Autoplay]}
             autoplay={{
               delay: 1800, 
-              disableOnInteraction: false, 
+              disableOnInteraction: false,  
               pauseOnMouseEnter: true,
             }}
             loop={true} 

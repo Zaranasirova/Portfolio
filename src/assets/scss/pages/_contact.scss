@@ -1,5 +1,6 @@
 .contact-section {
   background-color: $second_color;
+  height: 100%;
   .contact-head {
     width: 100%;
     text-align: center;
@@ -14,30 +15,51 @@
   }
   .contact-wrapper {
     display: flex;
-    padding: 60px 0;
-    position: relative;
-    overflow: hidden;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      right: 50%;
-      border: 1px solid #fff;
-      height: 100%;
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+    @media(max-width:690px){
+      flex-direction: column;
+    }
+    .contact-form,
+    .contact-info {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      padding: 40px 0;
+      @media(max-width:690px){
+        padding: 20px 0;
+      }
+    }
+    .divider {
+      width: 1px;
+      min-height: 150px;
+      background-color: #fff;
+      position: relative;
+      flex-shrink: 0;
+      @media(max-width:690px){
+        display: none;
+      }
     }
     .contact-form {
-      flex: 1;
-
       form {
         display: flex;
         flex-direction: column;
-        margin-right: 80px;
+        margin-right: 40px;
         gap: 10px;
+        
+        @media(max-width:690px){
+          margin-right: 0;
+          width: 100%;
+        }
         .name-email {
           display: flex;
           width: 100%;
           gap: 10px;
+          @media(max-width:690px){
+           flex-direction: column;
+           width: 100%;
+          }
           input {
             flex: 1;
             padding: 3px 3px 3px 24px;
@@ -46,6 +68,10 @@
             color: black;
             outline: none;
             border: none;
+            width: 100%;
+            @media(max-width:690px){
+              padding: 6px 3px 6px 24px;
+             }
           }
         }
         .telephone {
@@ -78,76 +104,83 @@
           align-items: center;
           border: none;
           outline: none;
-          &:hover{
+          &:hover {
             background-color: rgba(24, 33, 83, 0.5); /* 50% şəffaflıq */
-            
           }
         }
       }
     }
     .contact-info {
-      flex: 1;
       display: flex;
       flex-direction: column;
-      .consultant-contact-info{
+      @media(max-width:690px){
+        align-items: center;
+      }
+      .consultant-contact-info {
         flex: 3;
-        padding: 0 0 50px 80px;
+        padding: 0 0 40px 40px;
         display: flex;
         flex-direction: column;
         gap: 25px;
         color: $first_color;
         border-bottom: 1px solid grey;
-        .frontend-consultant-info{
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            
-            h2{
-                font-size: 25px;
-                font-weight: 600;
-                
-            }
-            p{
-                letter-spacing: 0.05em;
-                font-size: 14px;
-            }
+        @media(max-width:690px){
+          padding: 0 0 20px 0;
+          text-align: center;
         }
-        .contact-phone{
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            h6{
-                font-size: 14px;
-                letter-spacing: 0.05em;
-            }
-            a{
-                font-size: 14px;
-                color: $first_color;
-            }
+        .frontend-consultant-info {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          h2 {
+            font-size: 25px;
+            font-weight: 600;
+          }
+          p {
+            letter-spacing: 0.05em;
+            font-size: 14px;
+          }
         }
-        .contact-email{
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            h6{
-                font-size: 14px;
-                letter-spacing: 0.05em;
-            }
-            a{
-                font-size: 14px;
-                color: $first_color;
-            }
+        .contact-phone {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          h6 {
+            font-size: 14px;
+            letter-spacing: 0.05em;
+          }
+          a {
+            font-size: 14px;
+            color: $first_color;
+          }
+        }
+        .contact-email {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          h6 {
+            font-size: 14px;
+            letter-spacing: 0.05em;
+          }
+          a {
+            font-size: 14px;
+            color: $first_color;
+          }
         }
       }
-      .social-links{
+      .social-links {
         display: flex;
         gap: 25px;
         padding: 40px 0 0 80px;
-        a{
-            .contact-link-icon{
-                width: 22px;
-                height: 22px;
-            }
+        @media(max-width:690px){
+          padding: 20px 0 0 0;
+        }
+        a {
+          .contact-link-icon {
+            width: 22px;
+            height: 22px;
+          }
         }
       }
     }
