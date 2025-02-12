@@ -72,7 +72,7 @@ export const Work_data = [
   {
     company: "NVA Ailəsi",
     position: "Frontend-Developer Freelancer",
-    duration: "yanvar",
+    duration: "January 2025",
     description:
       "I am developing the NVA Ailesi platform. This platform is a space where screenwriters can share their scripts, connect with industry professionals, and showcase their creativity. Whether you're a beginner or an experienced screenwriter, NVA Ailesi will be the perfect place to bring your stories to life.",
   },
