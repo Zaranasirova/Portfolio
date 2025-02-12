@@ -89,19 +89,19 @@ export const education_data = [
   {
     company: "Texnoera ACADEMY ",
     position: "Frontend Developer",
-    duration: "2024",
+    duration: "January 2024 - June 2024",
     description:
       "Completed and received a diploma for a comprehensive Front-End Development course at Texnoera Academy, covering core technologies such as HTML, CSS, and JavaScript. Gained practical experience in building responsive and user-friendly websites and applications. Developed a strong foundation in modern web development practices and a passion for creating efficient and engaging user experiences.",
   },
   {
     company: "NBEES ACADEMY ",
     position: "Frontend Developer",
-    duration: "2024",
+    duration: "November 2023 - December 2023",
     description:
       "Completed a Front-End Development course at NBESS Academy, specializing in HTML, CSS, and JavaScript. Gained practical skills in creating responsive websites and applications, focusing on modern web development techniques. Developed a solid understanding of front-end technologies and the ability to create user-friendly and functional designs",
   },
   {
-    company: "Unec",
+    company: "Azerbaijan State University of Economics",
     position: "Marketing",
     duration: "2020-2025",
     description:
